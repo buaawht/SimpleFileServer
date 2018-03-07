@@ -275,7 +275,7 @@ class SimpleHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
 def main():
     http_server = BaseHTTPServer.HTTPServer(('', int(args.p)), SimpleHTTPRequestHandler)
-    print "Start Simple File Server, port=%d" % args.port
+    print "Start Simple File Server, port=%d" % args.p
     http_server.serve_forever()
 
 
